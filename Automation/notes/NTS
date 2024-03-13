@@ -1,0 +1,45 @@
+//		Thread.sleep(8000);
+//
+//		driver.findElement(By.xpath("//span[@class='k-button-icon fa fa-th icon-size ng-star-inserted']")).click();// clicking
+//																													// production
+//
+//		Thread.sleep(6000);
+//
+//		driver.findElement(By.xpath("//a[@title='eTMF']")).click();// clicking eTMF
+//
+//		Thread.sleep(5000);
+//
+//		driver.findElement(By.xpath("//*[text()='Edit Dashboard']")).click();// clicking Edit Dashboard
+
+		// Thread.sleep(5000);
+
+		// driver.findElement(By.xpath("(//*[@class='k-checkbox-label'])[1]")).click();//
+		// checkbox
+
+		// Thread.sleep(2000);
+
+		// driver.findElement(By.xpath("(//*[@class='k-checkbox-label'])[2]")).click();//
+		// checkbox
+
+		// Thread.sleep(2000);
+
+		// driver.findElement(By.xpath("(//*[@class='k-checkbox-label'])[3]")).click();//
+		// checkbox
+
+		// Thread.sleep(2000);
+
+		// driver.findElement(By.xpath("(//*[@class='k-checkbox-label'])[4]")).click();//
+		// checkbox
+
+		// Thread.sleep(2000);
+
+		// driver.findElement(By.xpath("(//*[@class='k-checkbox-label'])[5]")).click();//
+		// checkbox
+
+		// Thread.sleep(2000);
+
+		// driver.findElement(By.xpath("//*[text()=' Save ']")).click();// save
+
+		// Thread.sleep(2000);
+
+		// driver.findElement(By.xpath("//*[text()=' Save ']")).click();// save
