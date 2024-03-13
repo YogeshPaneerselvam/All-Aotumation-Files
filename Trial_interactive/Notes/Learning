@@ -1,0 +1,46 @@
+
+
+Take ScreenShot Methods
+
+   public static void takeScreenShot() throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File src = ts.getScreenshotAs(OutputType.FILE);
+		File destination = new File("C:\\Users\\yogesh.paneerselvam\\Pictures\\Screenshots\\TakesScreenshot.jpeg");
+		FileUtils.copyFile(src, destination);
+	}
+
+	public static void screenShot(String filename) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		File dest = new File("./screenshots/" + filename + ".jpng");
+		FileUtils.copyFile(source, dest);
+	}
+	
+	
+Xl sheet methods
+ 
+  public static String stringData(int row, int cell) throws IOException {
+		File f = new File("src\\test\\resources\\testData\\Data.xlsx");
+		FileInputStream input = new FileInputStream(f);
+		Workbook w = new XSSFWorkbook(input);
+		Sheet s = w.getSheet("sheet1");
+		Row r = s.getRow(row);
+		Cell c = r.getCell(cell);
+		String stringValue = c.getStringCellValue();
+		return stringValue;
+	}
+ 
+	public static String numericData(int row, int cell) throws IOException {
+		File f = new File("src\\test\\resources\\testData\\Data.xlsx");
+		FileInputStream input = new FileInputStream(f);
+		Workbook w = new XSSFWorkbook(input);
+		Sheet s = w.getSheet("sheet1");
+		Row r = s.getRow(row);
+		Cell c = r.getCell(cell);
+		double d = c.getNumericCellValue();
+		long l = (long) d;
+		String numericValue = String.valueOf(l);
+		return numericValue;
+ 
+	}
+	
